@@ -1,0 +1,1 @@
+A sveltekit theme. More details will be added soon.
