@@ -1,7 +1,13 @@
 :root {
-  --font-family: var(--font-sans);
-  --font-size: 22px;
-  --color: #333;
+  /* --font-family: var(--font-sans); */
+  /* --font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif; */
+  --font-family:  'Source Sans Pro', sans-serif;
+  --font-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
+    monospace;
+  --font-size: 20px;
+  --color: #515151;
+  --header-color: #303030;
   --brand-color: #f44336;
   --duration-100: 100ms;
   --duration-300: 300ms;
@@ -25,6 +31,7 @@ h5,
 h6 {
   margin-top: 1.5rem;
   font-weight: bold;
+  color: var(--header-color);
 }
 
 h1 {
@@ -44,6 +51,10 @@ h5 {
 }
 h6 {
   font-size: 0.8rem;
+}
+
+p {
+  margin-bottom: 1rem;
 }
 
 a {
@@ -135,10 +146,10 @@ dd {
 
 /* Quotes */
 blockquote {
-  padding: .5rem 1rem;
-  margin: .8rem 0;
+  padding: 0.5rem 1rem;
+  margin: 0.8rem 0;
   color: #7a7a7a;
-  border-left: .25rem solid #e5e5e5;
+  border-left: 0.25rem solid #e5e5e5;
 }
 blockquote p:last-child {
   margin-bottom: 0;

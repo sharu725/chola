@@ -1,5 +1,6 @@
 <script>
   import "../../static/reset.css";
+  import "../../static/atom-dark-syntax.css";
   import "../../static/global.css";
   import Header from "$lib/Header.svelte";
 </script>
