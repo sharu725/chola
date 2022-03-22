@@ -1,6 +1,7 @@
-```text
-Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
-```
+---
+title: HTML Elements
+layout: post
+---
 
 Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. _Aenean eu leo quam._ Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
 
@@ -10,7 +11,7 @@ Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur puru
 
 ## Inline HTML elements
 
-HTML defines a long,[^longnote] list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
+HTML defines a long, list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
 
 - **To bold text**, use `<strong>`.
 - _To italicize text_, use `<em>`.
@@ -85,5 +86,3 @@ Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur e
 ---
 
 Want to see something else added? <a href="https://github.com/sharu725/chola/issues/new">Open an issue.</a>
-
-[^longnote]: This is the first footnote.
