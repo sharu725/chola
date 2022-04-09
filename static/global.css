@@ -7,6 +7,7 @@
   --brand-color: #f44336;
   --duration-100: 100ms;
   --duration-300: 300ms;
+  --base-line-height: 1.6;
 }
 
 body {
@@ -14,7 +15,7 @@ body {
   font-family: var(--font-family);
   font-size: var(--font-size);
   color: var(--color);
-  line-height: 1.8;
+  line-height: var(--base-line-height);
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
 }
@@ -47,6 +48,10 @@ h5 {
 }
 h6 {
   font-size: 0.8rem;
+}
+
+p {
+  margin-bottom: 1rem;
 }
 
 a {
@@ -87,8 +92,7 @@ hr {
 /* Code */
 code,
 pre {
-  font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
-    monospace;
+  font-family: va(--font-mono);
 }
 code {
   padding: 0.25em 0.5em;
