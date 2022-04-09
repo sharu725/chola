@@ -1,5 +1,4 @@
 :root {
-  /* --font-family: var(--font-sans); */
   --font-family: "Lato", sans-serif;
   --font-size: 22px;
   --color: #555;
@@ -119,6 +118,9 @@ pre code {
   font-size: 100%;
   color: inherit;
   background-color: transparent;
+}
+em {
+  font-style: italic;
 }
 
 /* Lists */

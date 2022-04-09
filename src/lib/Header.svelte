@@ -1,17 +1,24 @@
 <script>
   import site from "$lib/constants";
+  import { page } from "$app/stores";
+  $: currentPage = $page.url.pathname;
 </script>
 
 <header>
   <nav>
-    <a href="/">
-      <div class="logo">
-        <h1>{site.title}</h1>
-      </div>
+    <a class="logo" href="/">
+      <h1>{site.title}</h1>
     </a>
     <ul>
-      {#each site.menus as menu}
-        <li><a href={menu.url}>{menu.name}</a></li>
+      {#each site.menus as { url, name }}
+        <li>
+          <a
+            class:active={url !== "/"
+              ? currentPage.match(url)
+              : url === currentPage}
+            href={url}>{name}</a
+          >
+        </li>
       {/each}
     </ul>
   </nav>
@@ -39,6 +46,11 @@
     font-size: 2.25rem;
     font-weight: bold;
     margin: 0;
+    transition-duration: var(--duration-100);
+  }
+  h1:hover,
+  a.active {
+    color: var(--brand-color);
   }
   a {
     text-decoration: none;
