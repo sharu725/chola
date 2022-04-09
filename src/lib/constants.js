@@ -13,6 +13,10 @@ const site = {
       name: "Contact",
       url: "/contact",
     },
+    {
+      name: "Download",
+      url: "https://github.com/sharu725/chola",
+    },
   ],
 };
 

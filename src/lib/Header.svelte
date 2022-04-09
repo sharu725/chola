@@ -13,6 +13,7 @@
       {#each site.menus as { url, name }}
         <li>
           <a
+            sveltekit:prefetch
             class:active={url !== "/"
               ? currentPage.match(url)
               : url === currentPage}
