@@ -2,7 +2,7 @@
   import "../../static/reset.css";
   import "../../static/atom-dark-syntax.css";
   import "../../static/global.css";
-  import Header from "$lib/Header.svelte";
+  import Header from "$lib/components/Header.svelte";
 </script>
 
 <div class="wrapper">
