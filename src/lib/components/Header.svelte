@@ -34,6 +34,7 @@
   nav,
   ul {
     display: flex;
+    flex-wrap: wrap;
     place-items: center;
   }
   ul {
@@ -61,9 +62,11 @@
     nav {
       display: block;
     }
+    ul {
+      margin-bottom: 0;
+    }
     li {
-      margin-left: 0;
-      margin-right: 1rem;
+      margin: 0 1rem 1rem 0;
     }
   }
 </style>

@@ -1,5 +1,7 @@
 :root {
   --font-family: "Lato", sans-serif;
+  --font-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
+    monospace;
   --font-size: 22px;
   --color: #555;
   --header-color: #333;
@@ -105,7 +107,7 @@ pre {
   margin-top: 0;
   margin-bottom: 1rem;
   padding: 1rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 1.4;
   white-space: pre;
   white-space: pre-wrap;
@@ -140,6 +142,17 @@ dt {
 }
 dd {
   margin-bottom: 0.5rem;
+}
+cite {
+  font-style: italic;
+}
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+sub {
+  vertical-align: sub;
+  font-size: smaller;
 }
 
 /* Quotes */
