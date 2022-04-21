@@ -9,3 +9,8 @@ layout: post
 
 <Intro />
 <Home />
+
+<svelte:head>
+  <title>Home | Chola Sveltekit Template</title>
+  <meta name="description" content="A minimal content focused markdown sveltekit template.">
+</svelte:head>
