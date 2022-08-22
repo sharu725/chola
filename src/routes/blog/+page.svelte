@@ -1,21 +1,6 @@
-<script context="module">
-  /**
-   * @type {import('@sveltejs/kit').Load}
-   */
-  export async function load({ fetch }) {
-    const res = await fetch(`/api/posts.json`);
-    const posts = await res.json();
-
-    return {
-      props: {
-        posts,
-      },
-    };
-  }
-</script>
-
 <script>
-  export let posts;
+  export let data;
+  const { posts } = data;
 </script>
 
 <main>
@@ -23,7 +8,9 @@
     <div class="article-list">
       {#each posts as { title, description, path }}
         <div>
-          <a sveltekit:prefetch href={path.replace(/\.[^/.]+$/, "")}
+          <a
+            sveltekit:prefetch
+            href={path.replace("../..", "").replace("+page.md", "")}
             ><h2>{title}</h2></a
           >
           <p>{description}</p>

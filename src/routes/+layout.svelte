@@ -1,7 +1,7 @@
 <script>
-  import "../../static/reset.css";
-  import "../../static/atom-dark-syntax.css";
-  import "../../static/global.css";
+  import "$lib/css/reset.css";
+  import "$lib/css/atom-dark-syntax.css";
+  import "$lib/css/global.css";
   import Header from "$lib/components/Header.svelte";
 </script>
 
