@@ -9,16 +9,16 @@
   },
   "devDependencies": {
     "@sveltejs/adapter-node": "^5.2.9",
-    "@sveltejs/kit": "^1.0.1",
-    "autoprefixer": "^10.4.13",
-    "cssnano": "^5.1.14",
+    "@sveltejs/kit": "^1.30.4",
+    "autoprefixer": "^10.4.20",
+    "cssnano": "^5.1.15",
     "mdsvex": "^0.10.6",
-    "postcss": "^8.4.20",
+    "postcss": "^8.4.49",
     "postcss-load-config": "^3.1.4",
     "remark-footnotes": "^4.0.1",
-    "svelte": "^3.55.0",
+    "svelte": "^3.59.2",
     "svelte-preprocess": "^4.10.7",
-    "vite": "^4.0.4"
+    "vite": "^4.5.5"
   },
   "type": "module"
 }
