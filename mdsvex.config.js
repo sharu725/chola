@@ -1,4 +1,11 @@
 import { defineMDSveXConfig as defineConfig } from "mdsvex";
+import { join, dirname } from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+const path_to_layout = join(__dirname, "./src/layouts");
 
 const config = defineConfig({
   extensions: [".svelte.md", ".md", ".svx"],
@@ -9,11 +16,11 @@ const config = defineConfig({
 
   remarkPlugins: [],
   rehypePlugins: [],
-  
+
   layout: {
-    default: "./src/layouts/default.svelte",
-    post: "./src/layouts/post.svelte",
-    page: "./src/layouts/page.svelte",
+    default: path_to_layout + "/default.svelte",
+    page: path_to_layout + "/page.svelte",
+    post: path_to_layout + "/post.svelte",
   },
 });
 

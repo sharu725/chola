@@ -8,9 +8,7 @@
     <div class="article-list">
       {#each posts as { title, description, path }}
         <div>
-          <a
-            sveltekit:prefetch
-            href={path.replace("../..", "").replace("+page.md", "")}
+          <a href={path.replace("../..", "").replace("+page.md", "")}
             ><h2>{title}</h2></a
           >
           <p>{description}</p>
