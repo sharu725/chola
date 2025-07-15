@@ -12,4 +12,3 @@
   - run ``npm install`` to install all dependencies
   - run ``npm run dev`` to check the site locally for development
   - run ``npm run build`` to build the production site
-
